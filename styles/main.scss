@@ -1,0 +1,20 @@
+@import 'aos/dist/aos.css';
+
+@import "./base/reset";
+@import "./base/base";
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/placeholders";
+
+
+@import "../components/shared/Header/Header.scss";
+@import "../components/shared/Tag/Tag.scss";
+@import "../components/home/Hero/Hero.scss";
+@import "../components/contact/ContactHero/ContactHero.scss";
+@import "../components/projects/ProjectSection/ProjectSection.scss";
+@import "../components/projects/ProjectCard/ProjectCard.scss";
+@import "../components/projects/ProjectSidebar/ProjectSidebar.scss";
+@import "../components/shared/Footer/Footer.scss";
+
+
+

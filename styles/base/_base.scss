@@ -1,0 +1,122 @@
+@import './fonts';
+
+
+:root {
+  --primary-nav-text-color: #031926;
+  --primary-nav-text-hover-color: #031926;
+  --primary-heading-color: #031926;
+  --primary-text-color: #031926;
+  --primary-icon-color: #031926;
+  --primary-background-color: #fff;
+  --primary-link-background-color: #6747c7;
+  --primary-link-border-color: #6747c7;
+  --primary-link-background-hover-color: #5033a8;
+  --primary-link-border-hover-color: #5033a8;
+  --primary-project-link-background-color: #33373d;
+  --primary-project-link-border-color: #33373d;
+  --primary-project-link-background-hover-color: #181a1d;
+  --primary-project-link-border-hover-color: #181a1d;
+  --primary-link-text-color: #fff;
+  --primary-link-text-hover-color: #fff;
+  --primary-tag-background-color: #f4f1ee;
+  --primary-tag-text-color: #000;
+  --primary-btn-text-color: #000;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  // background-color: black;
+}
+
+[data-theme="dark"] {
+  --primary-nav-text-color: #eee;
+  --primary-nav-text-hover-color: #eee;
+  --primary-heading-color: #e1e1e1;
+  --primary-text-color: #878593;
+  --primary-icon-color: #eee;
+  --primary-background-color: #020a13;
+  --primary-link-background-color: #33373d;
+  --primary-link-border-color: #33373d;
+  --primary-link-background-hover-color: #eee;
+  --primary-link-border-hover-color: #eee;
+  --primary-project-link-background-color: #33373d;
+  --primary-project-link-border-color: #33373d;
+  --primary-project-link-background-hover-color: #eee;
+  --primary-project-link-border-hover-color: #eee;
+  --primary-link-text-color: #eee;
+  --primary-link-text-hover-color: #000;
+  --primary-tag-background-color: #091521;
+  --primary-tag-text-color: #e1e1e1;
+  --primary-btn-text-color: #e1e1e1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  // font-family: 'Lato', sans-serif;
+  font-family: 'Inter', sans-serif;
+  // background-color:#10101a;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+//bootstrap style
+.offcanvas {
+  background-color: var(--primary-background-color);
+
+  p {
+    color: var(--primary-text-color);
+  }
+}
+.offcanvas.offcanvas-end{
+  width: 480px;
+}
+.offcanvas-header{
+  justify-content: flex-end;
+
+  .btn-close{
+    color: var(--primary-btn-text-color);
+  }
+}
+.btn-close{
+  color: var(--primary-btn-text-color);
+}
+
+
+@keyframes changeBg {
+  0% {
+    background-image: linear-gradient(to left, #38b2ac, #0bc5ea);
+    // background-image: linear-gradient(to left, #6bc5f8, #cf59e6);
+  }
+
+  100% {
+    // background-image: linear-gradient(to left, #cf59e6, #6bc5f8);
+    background-image: linear-gradient(to left, #0bc5ea, #38b2ac);
+
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    color: white;
+    background: black;
+  }
+}

@@ -1,0 +1,52 @@
+.project-section {
+   background-color: var(--primary-background-color);
+   min-height: calc(100vh - 60px);
+ 
+   &__main-container{
+        padding-top: 2rem;
+        max-width: 1000px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+       
+   }
+    
+    
+    &__heading-container{
+        margin-top: 50px;
+        margin-bottom: 50px;
+      
+
+
+        h4{
+            @extend %h4;
+            font-weight: 700;
+            color: var(--primary-heading-color);
+            // text-align: left;
+
+            @include xs {
+                text-align: center;
+            }
+            @include sm {
+                text-align: center;
+            }
+            @include md {
+                text-align: center;
+            }
+            @include lg {
+                text-align: left;
+            }
+        }
+    }
+ 
+
+    &__cards-container {
+        column-count: 2;
+        // display: flex;
+        @include xs {
+            column-count: 1;
+        }
+    }
+}
