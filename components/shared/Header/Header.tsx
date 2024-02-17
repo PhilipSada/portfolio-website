@@ -69,7 +69,7 @@ const Header: React.FC = () => {
                     {/* <div className="header__right-menu-item"  id="menuItem1"><Link href={'#about'} className="header__menu-link">About</Link></div> */}
                     <div className="header__right-menu-item"  id="menuItem2"><Link href={'/projects'} className="header__menu-link">Projects</Link></div>
                     <div className="header__right-menu-item"  id="menuItem3"><Link href={'/contact'} className="header__menu-link">Contact</Link></div>
-                    <div className="header__right-menu-item"  id="menuItem4"><Link href={'documents/resume.pdf'} target={"_blank"} className="header__menu-link">Resume</Link></div>
+                    <div className="header__right-menu-item"  id="menuItem4"><Link href={'/'} target={"_blank"} className="header__menu-link">Resume</Link></div>
                     <div className="header__right-menu-item"  id="menuItem5"><div className="header__theme-toggle"><ThemeToggleIcon mounted={mounted}/></div></div>
                     <div className="header__right-menu-item header__menu-bars" onClick={handleMobileNav}>{mobileNav ? <VscClose className="header__icon header__icon--close" /> : <VscMenu className="header__icon header__icon--menu" />}</div>
                 </div>
@@ -81,7 +81,7 @@ const Header: React.FC = () => {
                     {/* <div className="header__mobile-menu-item"><Link href={'#about'} className="header__mobile-menu-link">About</Link></div> */}
                     <div className="header__mobile-menu-item"><Link href={'/projects'} className="header__mobile-menu-link">Projects</Link></div>
                     <div className="header__mobile-menu-item"><Link href={'/contact'} className="header__mobile-menu-link">Contact</Link></div>
-                    <div className="header__mobile-menu-item"><Link href={'documents/resume.pdf'} target={"_blank"} className="header__mobile-menu-link">Resume</Link></div>
+                    <div className="header__mobile-menu-item"><Link href={'/'} target={"_blank"} className="header__mobile-menu-link">Resume</Link></div>
                 </div>
             </div>
         </div>
